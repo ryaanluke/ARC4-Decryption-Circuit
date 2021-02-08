@@ -1,24 +1,3 @@
-# Lab 3: Memories from Room 40
-
-## Contents
-
-* [Background](#background)
-  * [ARC4 Decryption](#arc4-decryption)
-  * [The ready\-enable microprotocol](#the-ready-enable-microprotocol)
-  * [Length\-prefixed strings](#length-prefixed-strings)
-  * [Embedded memories](#embedded-memories)
-* [Designing the Decryption Circuit](#designing-the-decryption-circuit)
-  * [General implementation requirements](#general-implementation-requirements)
-  * [Task 1: ARC4 state initialization](#task-1-arc4-state-initialization)
-  * [Task 2: The Key\-Scheduling Algorithm](#task-2-the-key-scheduling-algorithm)
-  * [Task 3: The Pseudo\-Random Generation Algorithm](#task-3-the-pseudo-random-generation-algorithm)
-  * [Task 4: Cracking ARC4](#task-4-cracking-arc4)
-  * [Task 5: Cracking in parallel](#task-5-cracking-in-parallel)
-* [Deliverables and evaluation](#deliverables-and-evaluation)
-  * [Automatic testing](#automatic-testing)
-  * [Marks](#marks)
-* [Extra ciphertexts](#extra-ciphertexts)
-
 ## Background
 
 The circuit is an ARC4 decryption circuit. [ARC4](https://en.wikipedia.org/wiki/RC4) is a symmetric stream cipher, and was once widely used in encrypting web traffic, wireless data, and so on; it has since been broken. Still, the structure of ARC4 is similar to modern symmetric encryption methods, and provides a good vehicle for studying digital circuits that make extensive use of on-chip memory.
@@ -62,7 +41,6 @@ Note that the key is stored [big-endian](https://en.wikipedia.org/wiki/Endiannes
 
 <p align="center"><img src="figures/key-endianness.svg" title="key endianness" width="60%" height="60%"></p>
 
-Finally, remember to copy any modules you develop in one task and use in another task to the folder where they are used, and do not submit any generated memories. Carefully read the [Deliverables and evaluation](#deliverables-and-evaluation) section for details.
 
 ### Task 1: ARC4 state initialization
 
