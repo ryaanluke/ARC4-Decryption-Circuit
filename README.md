@@ -1,3 +1,7 @@
+## PLEASE READ
+
+A summarized report of the code is uploaded as a PDF. For detailed explanation of my code please refer to it. Thank you!
+
 ## Background
 
 The circuit is an ARC4 decryption circuit. [ARC4](https://en.wikipedia.org/wiki/RC4) is a symmetric stream cipher, and was once widely used in encrypting web traffic, wireless data, and so on; it has since been broken. Still, the structure of ARC4 is similar to modern symmetric encryption methods, and provides a good vehicle for studying digital circuits that make extensive use of on-chip memory.
